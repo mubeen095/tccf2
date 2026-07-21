@@ -6,7 +6,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { margin: 0; padding: 0; width: 100%; max-width: 100%; background: #050505; touch-action: manipulation; }
 body { margin: 0; padding: 0; width: 100%; max-width: 100%; background: #050505; touch-action: manipulation; }
-#root { width: 100%; max-width: 100%; overflow-x: hidden; position: relative; overscroll-behavior: none; }
+#root { width: 100%; max-width: 100%; overflow: hidden; position: relative; overscroll-behavior: none; }
 
 
 /* ── Missing utility classes (Tailwind JIT gaps) ── */
@@ -252,18 +252,3 @@ header input,
   animation-play-state: paused;
 }
 
-/* ── Viewport height fixes ── */
-.max-h-screen { max-height: 100dvh; }
-
-/* ── Mobile: natural scroll (fixes overflow inside overflow-auto + fixed) ── */
-@media (max-width: 768px) {
-  .relative.h-screen.overflow-hidden.bg-background.flex {
-    height: auto !important;
-    overflow: visible !important;
-    min-height: 100dvh;
-  }
-  .relative.h-screen.overflow-hidden.bg-background.flex > .relative.z-10.flex-1.h-screen.overflow-y-auto {
-    height: auto !important;
-    overflow: visible !important;
-  }
-}
