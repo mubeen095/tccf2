@@ -7,17 +7,16 @@
 </head>
 <body>
 <div id="root"></div>
-<div id="error" style="position:fixed;top:0;left:0;right:0;background:red;color:white;padding:20px;z-index:9999;display:none"></div>
+<div id="error-box" style="display:none;position:fixed;top:0;left:0;right:0;background:#ff0000;color:white;padding:20px;font-family:monospace;font-size:14px;z-index:99999;white-space:pre-wrap;word-break:break-all;max-height:100dvh;overflow-y:auto"></div>
 <script>
-// Try to load the JS and catch any errors
 window.addEventListener('error', function(e) {
-  document.getElementById('error').style.display = 'block';
-  document.getElementById('error').textContent = 'ERROR: ' + (e.message || e.error || JSON.stringify(e));
+  var box = document.getElementById('error-box');
+  if (box) { box.style.display = 'block'; box.textContent = 'ERROR: ' + (e.message || e.error || JSON.stringify(e)); }
   console.error('GLOBAL ERROR:', e);
 });
 window.addEventListener('unhandledrejection', function(e) {
-  document.getElementById('error').style.display = 'block';
-  document.getElementById('error').textContent = 'PROMISE ERROR: ' + e.reason;
+  var box = document.getElementById('error-box');
+  if (box) { box.style.display = 'block'; box.textContent = 'PROMISE ERROR: ' + e.reason; }
 });
 </script>
 <script src="/assets/index-CIsw-BcG.js" defer></script>
