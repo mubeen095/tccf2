@@ -77,24 +77,19 @@
       *, *::before, *::after { box-sizing: border-box; }
       html {
         margin: 0; padding: 0;
-        width: 100%; max-width: 100%; height: 100%;
+        width: 100%; max-width: 100%;
         background: #050505;
-        overflow: hidden; position: fixed; top: 0; left: 0;
-        touch-action: none; overscroll-behavior: none;
       }
       body {
         margin: 0; padding: 0;
-        width: 100%; max-width: 100%; height: 100%;
+        width: 100%; max-width: 100%;
         background: #050505;
-        overflow: hidden; position: fixed; top: 0; left: 0;
-        touch-action: none; overscroll-behavior: none;
       }
       #root {
         width: 100%; max-width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
         position: relative;
       }
-      #root main { overflow: hidden !important; }
 
       .tcc-logo-img { display: inline-block; vertical-align: middle; }
     .tcc-logo-img img { display: block; height: 13em; width: auto; object-fit: contain; }
