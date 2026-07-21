@@ -1,0 +1,25 @@
+{
+  "name": "The Coding Company – AI Learning Ecosystem",
+  "short_name": "The Coding Company",
+  "description": "Master AI Engineering. Build real-world AI projects. Join an elite community of AI builders.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/img/tcc-logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/tcc-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"]
+}

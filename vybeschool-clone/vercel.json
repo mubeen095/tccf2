@@ -1,0 +1,6 @@
+{
+  "outputDirectory": "www.vybeschool.com",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
