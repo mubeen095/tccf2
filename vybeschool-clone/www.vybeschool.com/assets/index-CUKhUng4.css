@@ -7,6 +7,8 @@
 html { margin: 0; padding: 0; width: 100%; max-width: 100%; background: #050505; touch-action: manipulation; }
 body { margin: 0; padding: 0; width: 100%; max-width: 100%; background: #050505; touch-action: manipulation; }
 #root { width: 100%; max-width: 100%; overflow-x: hidden; }
+#root main { overscroll-behavior: none; }
+
 
 
 /* ── Missing utility classes (Tailwind JIT gaps) ── */
