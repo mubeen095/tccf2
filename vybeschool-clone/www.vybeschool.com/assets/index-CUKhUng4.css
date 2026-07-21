@@ -4,8 +4,8 @@
    GLOBAL STRUCTURAL RESET
    ════════════════════════════════════════════════ */
 *, *::before, *::after { box-sizing: border-box; }
-html { margin: 0; padding: 0; width: 100%; max-width: 100%; background: #050505; touch-action: manipulation; }
-body { margin: 0; padding: 0; width: 100%; max-width: 100%; background: #050505; touch-action: manipulation; }
+html { margin: 0; padding: 0; width: 100%; max-width: 100%; height: 100%; background: #050505; touch-action: none; overflow: hidden; position: fixed; top: 0; left: 0; overscroll-behavior: none; }
+body { margin: 0; padding: 0; width: 100%; max-width: 100%; height: 100%; background: #050505; touch-action: none; overflow: hidden; position: fixed; top: 0; left: 0; overscroll-behavior: none; }
 #root { width: 100%; max-width: 100%; overflow-x: hidden; }
 
 
