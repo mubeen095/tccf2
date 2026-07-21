@@ -251,3 +251,19 @@ header input,
 .marquee-content:hover {
   animation-play-state: paused;
 }
+
+/* ── Viewport height fixes ── */
+.max-h-screen { max-height: 100dvh; }
+
+/* ── Mobile: natural scroll (fixes overflow inside overflow-auto + fixed) ── */
+@media (max-width: 768px) {
+  .relative.h-screen.overflow-hidden.bg-background.flex {
+    height: auto !important;
+    overflow: visible !important;
+    min-height: 100dvh;
+  }
+  .relative.h-screen.overflow-hidden.bg-background.flex > .relative.z-10.flex-1.h-screen.overflow-y-auto {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
